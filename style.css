@@ -1,25 +1,99 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Noto Sans TC', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --color-orange: #ff7948;
   --color-grey: #efefef;
   --color-light-font: #5b5e66;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
 .container {
   background-color: var(--color-grey);
-  margin: 3rem auto;
-  box-shadow: 0 0 8px rgba(14, 19, 24, .07);
-  width: 75%;
-  max-width: 90rem;
-  height: 70rem;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(14, 19, 24, 0.07);
+}
+
+.block {
+  width: 95%;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+}
+
+.block__title-primary {
+  color: var(--color-orange);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.block__title-secondary {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: .8rem;
+}
+
+.block__content {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-light-font);
+  margin-top: .8rem;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.profile-info__basic {
+  position: relative;
+  background-color: var(--color-orange);
+  width: 45%;
+  max-width: 20rem;
+  padding: 3rem 0;
+  padding-top: 6rem;
+  margin-right: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.profile-info__photo {
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.profile-info__name {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.profile-info__job {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* Util */
+.color-white {
+  color: #fff;
 }
