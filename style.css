@@ -69,7 +69,6 @@ body {
   position: relative;
   background-color: var(--color-orange);
   width: 45%;
-  max-width: 20rem;
   padding: 3rem 0;
   padding-top: 6rem;
   margin-right: 1.5rem;
