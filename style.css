@@ -42,6 +42,7 @@ body {
 }
 
 .block__title-secondary {
+  color: #474950;
   font-weight: 500;
   font-size: 1.6rem;
   margin-top: 1rem;
