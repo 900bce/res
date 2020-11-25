@@ -51,7 +51,7 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   color: var(--color-light-font);
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   list-style-position: inside;
 }
 
@@ -97,11 +97,16 @@ body {
   color: #fff;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
 .hr {
   margin: 3rem auto;
   width: 90%;
 }
-
 
 .footer {
   width: 75%;
@@ -113,8 +118,98 @@ body {
   font-size: 1.2rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .profile {
+    display: flex;
+  }
 
-/* Util */
-.color-white {
-  color: #fff;
+  .profile-info {
+    display: block;
+    width: 35%;
+  }
+
+  .profile-info__basic {
+    width: 100%;
+  }
+
+  .profile-info__contact {
+    padding: 1.5rem 2rem;
+  }
+
+  .profile-info__name {
+    font-size: 2rem;
+  }
+
+  .profile-info__job {
+    font-size: 1.8rem;
+  }
+
+  .main {
+    width: 65%;
+  }
+
+  .block__title-primary {
+    font-size: 1.8rem;
+  }
+
+  .block__title-secondary {
+    font-size: 1.8rem;
+  }
+
+  .block__content {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 1rem 5rem;
+  }
+
+  .profile-info {
+    margin-right: 3rem;
+  }
+
+  .profile-info__contact {
+    padding: 2rem 3rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 3rem 5rem;
+  }
+
+  .profile-info {
+    width: 30%;
+  }
+
+  .profile-info__basic {
+    padding-top: 7rem;
+  }
+
+  .profile-info__photo {
+    width: 12rem;
+    height: 12rem;
+    top: -6rem;
+  }
+
+  .main {
+    width: 70%;
+  }
 }
